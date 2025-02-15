@@ -12,9 +12,8 @@
 }
 
 body {
-    font-family: "Work Sans", serif;
+
     background-color: var(--Light-pink);
-    color: var(--Dark-purple);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,12 +27,11 @@ body {
     width: 90%;
     min-width: 280px;
     max-width: 460px;
-    padding: 40px;
+    padding: 8px;
     background-color: var(--White);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 440px;
-   font-weight: 900;
+    font-weight: 900;
 }
 
 .attribution {
@@ -44,46 +42,89 @@ body {
 }
 
 .img-desktop {
-    /* width: 100vh; */
     height: 230px;
 }
+
 .FAQ-header {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: 40px;
+    padding: 22px;
+
+    h1 {
+        font-family: 'Work Sans', sans-serif;
+        color: var(--Dark-purple);
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    img {
+        width: 28px;
+        margin-right: 15px;
+    }
 }
+
 .FAQ-element {
     cursor: pointer;
     background-color: var(--White);
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 70px;
     margin-bottom: 2px;
-    padding: 20px;
+    padding: 16px 22px 0px 22px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+
     .FAQ-button {
-        border: none;        
+        border: none;
         background-color: var(--White);
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        margin-bottom: 16px;
+
+        img {
+            width: 23px;
+        }
 
     }
-    /* .FAQ-question {
-        border: none; 
-        background-color: var(--White);
-    
-    } */
+
+    .FAQ-question {
+        font-family: 'Work Sans', sans-serif;
+        color: var(--Dark-purple);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
     .FAQ-answer {
-        display: none;
+        margin-bottom: 20px;
+
+        p {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--Grayish-purple);
+            font-size: 12.2px;
+            font-weight: 500;
+
+        }
     }
 }
 
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('ttf');
+    font-weight: italic;
+    font-style: normal;
+}
 
 @media (min-width: 375px) {
     .img-mobile {
