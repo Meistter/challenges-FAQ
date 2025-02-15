@@ -75,6 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     .FAQ-button {
         border: none;
@@ -94,9 +95,9 @@ body {
 
     .FAQ-question {
         font-family: 'Work Sans', sans-serif;
-        color: var(--Dark-purple);
+        color: black;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 14px;
         text-align: left;
     }
 
@@ -111,6 +112,13 @@ body {
 
         }
     }
+}
+
+.active {
+    display: inline;
+}
+.inactive {
+    display: none;
 }
 
 @font-face {
