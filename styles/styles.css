@@ -127,7 +127,7 @@ body {
     display: none;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Work Sans';
     src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('ttf');
     font-weight: normal;
@@ -139,7 +139,7 @@ body {
     src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('ttf');
     font-weight: italic;
     font-style: normal;
-} */
+}
 
 @media (min-width: 375px) {
     .img-mobile {
