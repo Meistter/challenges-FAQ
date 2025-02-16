@@ -42,7 +42,9 @@ body {
 }
 
 .img-desktop {
-    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    height: 260px;
 }
 
 .FAQ-header {
@@ -75,7 +77,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     .FAQ-button {
         border: none;
@@ -103,7 +104,7 @@ body {
 
     .FAQ-answer {
         margin-bottom: 20px;
-
+ 
         p {
             font-family: 'Work Sans', sans-serif;
             color: var(--Grayish-purple);
@@ -112,6 +113,12 @@ body {
 
         }
     }
+}
+.minus-inactive {
+    display: none;
+}
+.plus-inactive {
+    display: none;
 }
 
 .active {
